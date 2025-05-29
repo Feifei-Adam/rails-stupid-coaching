@@ -1,18 +1,11 @@
 
 <h1>Stupid Coaching</h1>
 
-<h2> <%=@answer  %> </h2>
 
-<%
+<h2> <%=@question  %> </h2>
+<p> <%= @answer %> </p>
 
-def coach_answer(your_message)
-  if your_message.end_with?("?")
-    "Silly question, get dressed and go to work!"
-    elsif your_message == "Im working"
-    return "great, see ya"
-  else
-    "I don't care, get dressed and go to work!"
-  end
-end  %>
 
-<p> <%= coach_answer(@answer) %> </p>
+
+
+<a href="/ask">Ask another Question</a>
